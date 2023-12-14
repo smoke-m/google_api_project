@@ -24,7 +24,7 @@ DRIVE_SERVICE = discovery.build('drive', 'v3', credentials=CREDENTIALS)
 
 # тест импорта
 cred = ServiceAccountCreds(
-    scopes=SCOPES, **json.load(open('service-account-key.json'))
+    scopes=SCOPES, **json.load(open(CREDENTIALS_FILE))
 )
 
 
